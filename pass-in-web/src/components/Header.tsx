@@ -1,4 +1,5 @@
 import Icon from "../assets/icon.svg";
+import { NavLink } from "./NavLink";
 
 export function Header() {
   return (
@@ -6,12 +7,8 @@ export function Header() {
       <img src={Icon} />
 
       <nav className="flex items-center gap-5">
-        <a className="font-medium text-sm text-zinc-300" href="/">
-          Eventos
-        </a>
-        <a className="font-medium text-sm" href="">
-          Participantes
-        </a>
+        <NavLink href="/eventos">Eventos</NavLink>
+        <NavLink href="/participantes">Participantes</NavLink>
       </nav>
     </div>
   );
